@@ -1,5 +1,6 @@
 import app.trian.buildsrc.*
 apply {
+    plugin("com.android.application")
     plugin("kotlin-android")
     plugin("kotlin-kapt")
     plugin("org.jetbrains.kotlin.android")

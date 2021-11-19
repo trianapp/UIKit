@@ -2,10 +2,9 @@ import app.trian.buildsrc.*
 
 plugins {
     id 'com.android.application'
-    id 'kotlin-android'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
 }
-
 apply {
     from('../app.gradle')
 }

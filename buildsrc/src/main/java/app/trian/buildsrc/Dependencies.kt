@@ -14,9 +14,23 @@ object AppVersion{
     var compileSdkVersion = 31
     var minSdkVersion = 21
     var targetSdkVersion = 31
+    var kotlinVersion = "1.5.21"
 
     var versionCode = versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100 + versionBuild
     var versionName = "$versionMajor.$versionMinor.$versionPatch"
+}
+
+object GradlePlugin{
+    object Android{
+        object Tools{
+            var buildGradle = "com.android.tools.build:gradle:7.0.3"
+        }
+    }
+    object Jetbrains{
+        object Kotlin{
+            var kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.21"
+        }
+    }
 }
 
 object Libs {
@@ -35,7 +49,7 @@ object Libs {
             var uiTooling = "androidx.compose.ui:ui-tooling:${AppVersion.composeVersion}"
         }
         object Lifecycle{
-            var runtimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:2.4."
+            var runtimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0"
         }
         object Activity{
             var activityCompose = "androidx.activity:activity-compose:1.4.0"
