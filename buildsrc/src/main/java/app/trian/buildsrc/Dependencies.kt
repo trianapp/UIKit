@@ -26,6 +26,11 @@ object GradlePlugin{
             var buildGradle = "com.android.tools.build:gradle:7.0.3"
         }
     }
+    object Google{
+        object Dagger{
+            var hiltAndroidGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:2.28-alpha"
+        }
+    }
     object Jetbrains{
         object Kotlin{
             var kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.21"
@@ -42,6 +47,7 @@ object Libs {
             var ktx = "androidx.core:core-ktx:1.7.0"
         }
         object Compose{
+            var navigation = "androidx.navigation:navigation-compose:2.4.0-alpha04"
             var ui ="androidx.compose.ui:ui:${AppVersion.composeVersion}"
             var material ="androidx.compose.material:material:${AppVersion.composeVersion}"
             var uiToolingPreview ="androidx.compose.ui:ui-tooling-preview:${AppVersion.composeVersion}"
@@ -49,7 +55,13 @@ object Libs {
             var uiTooling = "androidx.compose.ui:ui-tooling:${AppVersion.composeVersion}"
         }
         object Lifecycle{
+            var viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+            var extensions = "androidx.lifecycle:lifecycle-extensions:2.2.0"
+            var compiler = "androidx.lifecycle:lifecycle-compiler:2.2.0"
+            var livedataKtx = "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+            // To integrate with ViewModel
             var runtimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0"
+            var viewModelCompose = "androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha07"
         }
         object Activity{
             var activityCompose = "androidx.activity:activity-compose:1.4.0"
@@ -68,6 +80,12 @@ object Libs {
     object Google{
         object Android{
             var material = "com.google.android.material:material:1.4.0"
+        }
+        object Dagger{
+            var hiltViewModel = "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha01"
+            var hiltAndroid = "com.google.dagger:hilt-android:2.40.1"
+            var hiltCompiler = "androidx.hilt:hilt-compiler:2.40.1"
+            var hiltAndroidCompiler = "com.google.dagger:hilt-android-compiler:2.40.1"
         }
     }
 }

@@ -3,7 +3,9 @@ import app.trian.buildsrc.*
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'dagger.hilt.android.plugin'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 apply {
     from('../app.gradle')
@@ -16,6 +18,7 @@ dependencies {
     implementation Libs.AndroidX.Compose.ui
     implementation Libs.AndroidX.Compose.material
     implementation Libs.AndroidX.Compose.uiToolingPreview
+    implementation Libs.AndroidX.Compose.navigation
     implementation Libs.AndroidX.Lifecycle.runtimeKtx
     implementation Libs.AndroidX.Activity.activityCompose
 
@@ -24,4 +27,19 @@ dependencies {
     androidTestImplementation Libs.AndroidX.Test.Espresso.espressoCore
     androidTestImplementation Libs.AndroidX.Compose.uiTestJunit
     debugImplementation Libs.AndroidX.Compose.uiTooling
+
+    //lifecycle for viewmodel
+    implementation Libs.AndroidX.Lifecycle.viewModel
+    implementation Libs.AndroidX.Lifecycle.extensions
+    kapt Libs.AndroidX.Lifecycle.compiler
+    implementation Libs.AndroidX.Lifecycle.livedataKtx
+
+    //added dagger
+    implementation Libs.Google.Dagger.hiltAndroid
+    implementation Libs.Google.Dagger.hiltViewModel
+    kapt Libs.Google.Dagger.hiltCompiler
+    kapt Libs.Google.Dagger.hiltAndroidCompiler
+
+    //added viewModel hilt for jetpack compose
+    implementation Libs.AndroidX.Lifecycle.viewModelCompose
 }

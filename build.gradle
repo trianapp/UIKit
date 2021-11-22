@@ -17,7 +17,7 @@ buildscript {
     dependencies {
         classpath GradlePlugin.Android.Tools.buildGradle
         classpath GradlePlugin.Jetbrains.Kotlin.kotlinGradlePlugin
-
+        classpath GradlePlugin.Google.Dagger.hiltAndroidGradlePlugin
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle.kts files
     }
