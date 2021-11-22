@@ -2,7 +2,13 @@ package app.trian.uikit.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple200 = Color(0xFFBB86FC)
-val Purple500 = Color(0xFF6200EE)
-val Purple700 = Color(0xFF3700B3)
-val Teal200 = Color(0xFF03DAC5)
+
+
+val Primary = Color(0xFFFDA758)
+val PrimaryVariant = Color(0xFFF65B4E)
+val Secondary = Color(0xFF1B237E)
+val SecondaryVariant = Color(0xFF171E68)
+val Background = Color(0xFFFFDFC1)
+val Surface = Color(0xFFFFFFFF)
+val onBackground = Color(0xFF573353)
+val onSurface = Color(0xFF573353)
