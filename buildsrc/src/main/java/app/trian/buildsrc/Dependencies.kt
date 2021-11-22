@@ -14,7 +14,7 @@ object AppVersion{
     var compileSdkVersion = 31
     var minSdkVersion = 21
     var targetSdkVersion = 31
-    var kotlinVersion = "1.5.21"
+    var kotlinVersion = "1.5.31"
 
     var versionCode = versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100 + versionBuild
     var versionName = "$versionMajor.$versionMinor.$versionPatch"
@@ -84,7 +84,7 @@ object Libs {
         object Dagger{
             var hiltViewModel = "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha01"
             var hiltAndroid = "com.google.dagger:hilt-android:2.40.1"
-            var hiltCompiler = "androidx.hilt:hilt-compiler:2.40.1"
+            var hiltCompiler = "com.google.dagger:hilt-compiler:2.40.1"
             var hiltAndroidCompiler = "com.google.dagger:hilt-android-compiler:2.40.1"
         }
     }
