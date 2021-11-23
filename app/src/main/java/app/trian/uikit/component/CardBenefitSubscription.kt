@@ -22,7 +22,7 @@ import app.trian.uikit.R
 import app.trian.uikit.ui.theme.MyUiKitTheme
 
 /*
-* Card Benefits Subsription
+* Card Benefits Subscription
 * Created at 23/11/21 19.34
 * Created by Trian Damai
 */
