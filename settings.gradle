@@ -11,6 +11,6 @@ dependencyResolutionManagement {
 
     }
 }
-rootProject.name = "MyUiKit"
+rootProject.name = "BuildHabit"
 include ':app'
 include ':buildsrc'

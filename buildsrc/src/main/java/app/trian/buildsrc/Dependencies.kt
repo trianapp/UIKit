@@ -23,7 +23,7 @@ object AppVersion{
 object GradlePlugin{
     object Android{
         object Tools{
-            var buildGradle = "com.android.tools.build:gradle:7.0.3"
+            var buildGradle = "com.android.tools.build:gradle:7.0.1"
         }
     }
     object Google{
@@ -33,7 +33,7 @@ object GradlePlugin{
     }
     object Jetbrains{
         object Kotlin{
-            var kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.21"
+            var kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${AppVersion.kotlinVersion}"
         }
     }
 }
