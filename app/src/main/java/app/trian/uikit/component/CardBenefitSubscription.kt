@@ -145,12 +145,12 @@ fun CardBenefitSubscription(
 @Preview(
     name = "preview Benefit Subs light small",
     uiMode = Configuration.UI_MODE_NIGHT_NO,
-    widthDp = 400
+    widthDp = 300
 )
 @Preview(
     name = "preview Benefit Subs light large",
     uiMode = Configuration.UI_MODE_NIGHT_NO,
-    widthDp = 600
+    widthDp = 500
 )
 @Composable
 fun PreviewBenefitSubs() {
