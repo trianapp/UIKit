@@ -35,11 +35,13 @@ fun CardDealSubscription(
             .clip(RoundedCornerShape(12.dp))
             .background(MaterialTheme.colors.surface),
     ) {
+        //pojok kanan bawah
         Image(
             modifier=modifier.align(Alignment.BottomEnd),
             painter = painterResource(id = R.drawable.bg_deal_subscription),
             contentDescription = "Deal"
         )
+        //sebelah kiri
         Column(
             modifier = modifier
                 .align(Alignment.CenterStart)
