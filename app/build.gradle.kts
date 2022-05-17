@@ -1,4 +1,3 @@
-
 plugins {
     id("com.android.application")
     id("dagger.hilt.android.plugin")
@@ -20,12 +19,6 @@ android {
             useSupportLibrary = true
         }
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    //
-    lint {
-        baseline = file("lint-baseline.xml")
-        abortOnError = false
     }
 
 
@@ -60,13 +53,10 @@ dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
 
-    implementation(project(":component"))
-
 
     implementation(Libs.Br.Com.Devsrsouza.Compose.Icons.Android.octicons)
     implementation(Libs.AndroidX.Multidex.multidex)
     implementation(Libs.AndroidX.Core.coreKtx)
-    implementation(Libs.Com.Google.Android.Flexbox.flexbox)
     implementation(Libs.AndroidX.Activity.activityCompose)
     implementation(Libs.Io.CoilKt.coilCompose)
     with(Libs.AndroidX.Compose) {
